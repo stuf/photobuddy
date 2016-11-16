@@ -1,7 +1,6 @@
 var entries = require('Modules/Entries');
 
 function getEntries() {
-	// return entries;
 	return new Promise(function (resolve, reject) {
 		setTimeout(function () {
 			resolve(entries);

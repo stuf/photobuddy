@@ -1,0 +1,14 @@
+{
+  "name": "photobuddy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:stuf/photobuddy.git",
+    "type": "git"
+  },
+  "author": "Stefan Rimaila <stefan@rimaila.fi>",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.8.1"
+  }
+}
