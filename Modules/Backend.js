@@ -1,4 +1,5 @@
 var entries = require('Modules/Entries');
+var records = require('Modules/Records');
 
 function getEntries() {
 	return new Promise(function (resolve, reject) {
