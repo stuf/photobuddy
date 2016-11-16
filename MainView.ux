@@ -1,2 +1,46 @@
 <App>
+	<ClientPanel>
+		<JavaScript>
+		var Observable = require('FuseJS/Observable');
+
+		var name = Observable('Test name for this item!');
+		var location = Observable('Location, Place');
+		var shutterSpeed = Observable(0.5);
+		var aperture = Observable(2.8);
+		var iso = Observable(100);
+		var notes = Observable('Accidentally screwed this up by leaving shutter open')
+
+		module.exports = {
+			name: name,
+			location: location,
+			shutterSpeed: shutterSpeed,
+			aperture: aperture,
+			iso: iso,
+			notes: notes
+		};
+		</JavaScript>
+		<ScrollView>
+			<StackPanel>
+				<Text Value="{name}" />
+
+				<Text>Name:</Text>
+				<TextBox Value="{name}" />
+
+				<Text>Location:</Text>
+				<TextBox Value="{location}" />
+
+				<Text>Shutter speed:</Text>
+				<TextBox Value="{shutterSpeed}" InputHint="Decimal" />
+
+				<Text>Aperture:</Text>
+				<TextBox Value="{aperture}" InputHint="Decimal" />
+
+				<Text>ISO:</Text>
+				<TextBox Value="{iso}" InputHint="Integer" />
+
+				<Text>Notes:</Text>
+				<TextBox Value="{notes}" TextWrapping="Wrap" />
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
 </App>
