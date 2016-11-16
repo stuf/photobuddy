@@ -1,12 +1,19 @@
 {
-  "RootNamespace":"",
+  "RootNamespace": "",
   "Packages": [
-  	"Fuse",
-  	"FuseJS",
-  	"Fuse.GeoLocation"
+    "Fuse",
+    "FuseJS",
+    "Fuse.GeoLocation"
   ],
   "Includes": [
     "*",
     "Modules/*.js:Bundle"
+  ],
+  "Projects": [
+    "NPM-Packages/photobuddy_modules.unoproj"
+  ],
+  "Excludes": [
+    "node_modules",
+    "NPM-Packages"
   ]
 }

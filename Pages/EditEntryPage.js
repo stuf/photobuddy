@@ -1,4 +1,5 @@
 var Observable = require('FuseJS/Observable');
+var GeoLocation = require('FuseJS/GeoLocation');
 var Context = require('Modules/Context');
 
 var entry = this.Parameter;

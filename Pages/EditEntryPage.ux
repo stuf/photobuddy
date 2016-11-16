@@ -5,15 +5,15 @@
 
 	<DockPanel>
 		<Grid ColumnCount="2" Dock="Bottom">
-			<c.Button Text="Save" Clicked="{save}" />
 			<c.Button Text="Cancel" Clicked="{cancel}" />
+			<c.Button Text="Save" Clicked="{save}" />
 		</Grid>
 
 		<ScrollView>
 			<StackPanel Padding="10" ItemSpacing="10">
 				<c.Text ux:Class="CaptionText" Opacity=".6" Margin="0,0,0,5" />
 
-				<c.Text Value="{name}" />
+				<c.Text Value="Edit entry" FontSize="24" />
 
 				<StackPanel>
 					<CaptionText>Name</CaptionText>
@@ -25,19 +25,29 @@
 					<c.TextBox Value="{location}" />
 				</StackPanel>
 
-				<StackPanel>
-					<CaptionText>Shutter speed</CaptionText>
-					<c.TextBox Value="{shutterSpeed}" InputHint="Decimal" />
-				</StackPanel>
+				<Grid ColumnCount="3">
+					<StackPanel Margin="0, 0, 5, 0">
+						<CaptionText>Shutter speed</CaptionText>
+						<c.TextBox Value="{shutterSpeed}" InputHint="Decimal" />
+					</StackPanel>
+
+					<StackPanel Margin="5, 0">
+						<CaptionText>Aperture:</CaptionText>
+						<c.TextBox Value="{aperture}" InputHint="Decimal" />
+					</StackPanel>
+
+					<StackPanel Margin="5, 0, 0, 0">
+						<CaptionText>ISO</CaptionText>
+						<c.TextBox Value="{iso}" InputHint="Integer" />
+					</StackPanel>
+				</Grid>
 
 				<StackPanel>
-					<CaptionText>Aperture:</CaptionText>
-					<c.TextBox Value="{aperture}" InputHint="Decimal" />
-				</StackPanel>
-
-				<StackPanel>
-					<CaptionText>ISO</CaptionText>
-					<c.TextBox Value="{iso}" InputHint="Integer" />
+					<CaptionText>Position</CaptionText>
+					<DockPanel>
+						<c.TextBox Value="0, 0" />
+						<c.ButtonOutlined Text="Locate me" Dock="Right" />
+					</DockPanel>
 				</StackPanel>
 
 				<StackPanel>

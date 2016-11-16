@@ -1,2 +1,3 @@
-# photobuddy
-Companion for your film photography needs
+# Photobuddy
+
+The companion for your film photography needs.

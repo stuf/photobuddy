@@ -1,0 +1,10 @@
+<Panel ux:Class="c.ButtonOutlined" FontSize="16" Padding="15, 0">
+	<string ux:Property="Text" />
+	<float ux:Property="FontSize" />
+
+	<c.Text Value="{Property Text}" FontSize="{Property FontSize}" Alignment="Center" />
+
+	<Rectangle Layer="Background" CornerRadius="0, 4, 4, 0">
+		<Stroke Color="{Resource Color.A200}" Width="2" />
+	</Rectangle>
+</Panel>

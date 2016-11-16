@@ -6,9 +6,15 @@
     "url": "git@github.com:stuf/photobuddy.git",
     "type": "git"
   },
+  "scripts": {
+    "postinstall": "nfuse"
+  },
   "author": "Stefan Rimaila <stefan@rimaila.fi>",
   "license": "MIT",
   "dependencies": {
     "immutable": "^3.8.1"
+  },
+  "devDependencies": {
+    "nfuse": "^2.2.3"
   }
 }

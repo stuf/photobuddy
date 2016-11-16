@@ -1,1 +1,1 @@
-<TextBox ux:Class="c.TextBox" TextColor="White" CaretColor="White" Padding="10" />
+<TextBox ux:Class="c.TextBox" TextColor="White" CaretColor="White" Padding="10" Font="{Resource Font.Base}" />

@@ -1,1 +1,1 @@
-<Text ux:Class="c.Text" Color="White" />
+<Text ux:Class="c.Text" Font="{Resource Font.Base}" Color="White" />

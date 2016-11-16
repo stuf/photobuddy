@@ -2,6 +2,22 @@
 	<iOS.StatusBarConfig Style="Light" />
 	<Android.StatusBarConfig Color="#263238" />
 
+	<!-- Fonts used -->
+	<Font ux:Key="Font.Monospace" File="Resources/Fonts/SpaceMono-Regular.ttf" />
+	<Font ux:Key="Font.SansSerif" File="Resources/Fonts/Karla-Regular.ttf" />
+	<Font ux:Key="Font.Serif" File="Resources/Fonts/Lora-Regular.ttf" />
+
+	<Font ux:Key="Font.Base" File="Resources/Fonts/Karla-Regular.ttf" />
+	<Font ux:Key="Font.Secondary" File="Resources/Fonts/SpaceMono-Regular.ttf" />
+
+	<!-- Primary colors -->
+	<float4 ux:Key="Color.P100" ux:Value="#C5CAE9" />
+	<float4 ux:Key="Color.P500" ux:Value="#3F51B5" />
+	<float4 ux:Key="Color.P800" ux:Value="#283593" />
+
+	<!-- Accent colors -->
+	<float4 ux:Key="Color.A200" ux:Value="#FF4081" />
+
 	<Router ux:Name="router" />
 
 	<ClientPanel>
