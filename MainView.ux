@@ -1,95 +1,10 @@
 <App>
+	<Router ux:Name="router" />
+
 	<ClientPanel>
-		<JavaScript>
-		var Observable = require('FuseJS/Observable');
-
-		var entry = Observable();
-		var entries = [
-			{
-				id: 0,
-				name: 'Shutter accident',
-				location: 'Test location, Test place',
-				shutterSpeed: 0.5,
-				aperture: 2.8,
-				iso: 100,
-				notes: 'Accidentally screwed this up by leaving the shutter open'
-			},
-			{
-				id: 1,
-				name: 'Hardangervidda National Park Vista',
-				location: 'Hardanger, Telemark',
-				shutterSpeed: 4,
-				aperture: 64,
-				iso: 100,
-				notes: 'Sunny day, no clouds'
-			},
-			{
-				id: 2,
-				name: 'Odda',
-				location: 'Odda, Someplace',
-				shutterSpeed: 8,
-				aperture: 44,
-				iso: 160,
-				notes: 'Used Portra 160 here, don\'t know what will come of this'
-			}
-		];
-
-		// var name = Observable('Test name for this item!');
-		// var location = Observable('Location, Place');
-		// var shutterSpeed = Observable(0.5);
-		// var aperture = Observable(2.8);
-		// var iso = Observable(100);
-		// var notes = Observable('Accidentally screwed this up by leaving shutter open')
-		var name = entry.map(function (x) { return x.name; });
-		var location = entry.map(function (x) { return x.location; });
-		var shutterSpeed = entry.map(function (x) { return x.shutterSpeed; });
-		var aperture = entry.map(function (x) { return x.aperture; });
-		var iso = entry.map(function (x) { return x.iso; });
-		var notes = entry.map(function (x) { return x.notes; });
-
-		function chooseEntry(arg) {
-			entry.value = arg.data;
-		}
-
-		module.exports = {
-			entries: entries,
-
-			name: name,
-			location: location,
-			shutterSpeed: shutterSpeed,
-			aperture: aperture,
-			iso: iso,
-			notes: notes,
-
-			chooseEntry: chooseEntry
-		};
-		</JavaScript>
-		<ScrollView>
-			<StackPanel>
-				<Each Items="{entries}">
-					<Button Text="{name}" Clicked="{chooseEntry}" />
-				</Each>
-
-				<Text Value="{name}" />
-
-				<Text>Name:</Text>
-				<TextBox Value="{name}" />
-
-				<Text>Location:</Text>
-				<TextBox Value="{location}" />
-
-				<Text>Shutter speed:</Text>
-				<TextBox Value="{shutterSpeed}" InputHint="Decimal" />
-
-				<Text>Aperture:</Text>
-				<TextBox Value="{aperture}" InputHint="Decimal" />
-
-				<Text>ISO:</Text>
-				<TextBox Value="{iso}" InputHint="Integer" />
-
-				<Text>Notes:</Text>
-				<TextBox Value="{notes}" TextWrapping="Wrap" />
-			</StackPanel>
-		</ScrollView>
+		<Navigator DefaultTemplate="home">
+			<HomePage ux:Template="home" router="router" />
+			<EditEntryPage ux:Template="editEntry" router="router" />
+		</Navigator>
 	</ClientPanel>
 </App>

@@ -1,0 +1,13 @@
+<Page ux:Class="HomePage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="HomePage.js" />
+
+	<ScrollView>
+		<StackPanel>
+			<Each Items="{entries}">
+				<Button Text="{name}" Clicked="{goToEntry}" />
+			</Each>
+		</StackPanel>
+	</ScrollView>
+</Page>

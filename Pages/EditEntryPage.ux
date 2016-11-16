@@ -1,0 +1,32 @@
+<Page ux:Class="EditEntryPage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="EditEntryPage.js" />
+
+	<ScrollView>
+		<StackPanel>
+			<Text Value="{name}" />
+
+			<Text>Name:</Text>
+			<TextBox Value="{name}" />
+
+			<Text>Location:</Text>
+			<TextBox Value="{location}" />
+
+			<Text>Shutter speed:</Text>
+			<TextBox Value="{shutterSpeed}" InputHint="Decimal" />
+
+			<Text>Aperture:</Text>
+			<TextBox Value="{aperture}" InputHint="Decimal" />
+
+			<Text>ISO:</Text>
+			<TextBox Value="{iso}" InputHint="Integer" />
+
+			<Text>Notes:</Text>
+			<TextBox Value="{notes}" TextWrapping="Wrap" />
+
+			<Button Text="Save" Clicked="{save}" />
+			<Button Text="Cancel" Clicked="{cancel}" />
+		</StackPanel>
+	</ScrollView>	
+</Page>
