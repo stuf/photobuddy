@@ -32,7 +32,7 @@
 					</StackPanel>
 
 					<StackPanel Margin="5, 0">
-						<CaptionText>Aperture:</CaptionText>
+						<CaptionText>Aperture</CaptionText>
 						<c.TextBox Value="{aperture}" InputHint="Decimal" />
 					</StackPanel>
 
