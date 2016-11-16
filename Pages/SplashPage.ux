@@ -1,0 +1,14 @@
+<Page ux:Class="SplashPage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="SplashPage.js" />
+
+	<Grid RowCount="2">
+		<StackPanel Alignment="VerticalCenter">
+			<c.Text Alignment="HorizontalCenter" FontSize="60">Apex Kek</c.Text>
+			<c.Text Alignment="HorizontalCenter" Opacity=".6">Low Bur</c.Text>
+		</StackPanel>
+
+		<c.Button Text="Click here to kek" Margin="50, 0" FontSize="20" Alignment="VerticalCenter" Clicked="{goToHomePage}" />
+	</Grid>
+</Page>

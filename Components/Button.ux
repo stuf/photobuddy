@@ -1,0 +1,15 @@
+<Panel ux:Class="c.Button" Margin="8" Padding="14" FontSize="16">
+	<string ux:Property="Text" />
+	<float ux:Property="FontSize" />
+
+	<Rectangle Layer="Background" Color="#FF4081" CornerRadius="4">
+		<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000006" />
+	</Rectangle>
+
+	<c.Text Value="{Property Text}" FontSize="{Property FontSize}" TextAlignment="Center" />
+
+	<WhilePressed>
+		<Scale Factor=".95" Duration=".07" Easing="QuadraticOut" />
+	</WhilePressed>
+</Panel>
+

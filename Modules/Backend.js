@@ -1,4 +1,4 @@
-var entries = require('entries');
+var entries = require('Modules/Entries');
 
 function getEntries() {
 	// return entries;

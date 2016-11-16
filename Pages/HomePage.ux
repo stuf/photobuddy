@@ -3,11 +3,27 @@
 
 	<JavaScript File="HomePage.js" />
 
-	<ScrollView>
-		<StackPanel>
-			<Each Items="{entries}">
-				<Button Text="{name}" Clicked="{goToEntry}" />
-			</Each>
-		</StackPanel>
-	</ScrollView>
+	<DockPanel>
+		<Text Color="White" FontSize="20" TextAlignment="Center" Dock="Top" Margin="0, 30">
+			Recent entries
+		</Text>
+		<ScrollView>
+			<StackPanel>
+				<Rectangle ux:Class="Separator" Height="1" Fill="#fff2" />
+
+				<Each Items="{entries}">
+					<Separator />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToEntry}">
+						<c.Text Value="{name}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".07" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+				</Each>
+
+				<Separator />
+			</StackPanel>
+		</ScrollView>
+	</DockPanel>
 </Page>
