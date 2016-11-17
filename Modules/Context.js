@@ -28,7 +28,7 @@ function refreshEntries() {
 
 function updateEntry(id, entry) {
   entries.forEach(function (it, idx) {
-    let _entry = entries.getAt(idx);
+    var _entry = entries.getAt(idx);
 
     if (_entry.id == id) {
       entries.replaceAt(idx, entry);

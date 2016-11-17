@@ -29,8 +29,8 @@ function updateEntry(id, entry) {
 
 function createEntry(entry) {
   return new Promise(function (resolve, reject) {
-    setTimeout(function ()) {
-      entries.push(Object.assign({}, entry, { id: utils.guid() } });
+    setTimeout(function () {
+      entries.push(Object.assign({}, entry, { id: utils.guid() }));
       resolve(id);
     }, 0);
   });

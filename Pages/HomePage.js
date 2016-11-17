@@ -8,7 +8,7 @@ function goToEntry(arg) {
 }
 
 function goToCreateNewEntry() {
-	router.push('createEntry', {});
+	router.push('createEntry');
 }
 
 module.exports = {
