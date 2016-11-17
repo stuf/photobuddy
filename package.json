@@ -8,7 +8,10 @@
   },
   "scripts": {
     "postinstall": "nfuse",
-    "dev": "babel . --watch --out-dir ."
+    "dev": "npm run dev:start && npm run fuse:start:local",
+    "dev:watch": "babel . --watch --out-dir .",
+    "dev:start": "babel . --out-dir .",
+    "fuse:start:local": "concurrently -k \"npm run dev:watch\" \"fuse preview\""
   },
   "author": "Stefan Rimaila <stefan@rimaila.fi>",
   "license": "MIT",
@@ -19,6 +22,7 @@
     "babel-cli": "^6.18.0",
     "babel-preset-es2015-fuse": "^1.0.0",
     "babel-preset-latest": "^6.16.0",
+    "concurrently": "^3.1.0",
     "nfuse": "^2.2.3"
   }
 }

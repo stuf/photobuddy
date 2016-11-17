@@ -3,9 +3,12 @@
     "latest",
     "es2015-fuse"
   ],
+  "only": [
+    "Modules/*.es6",
+    "Pages/*.es6"
+  ],
   "ignore": [
-  	"**/*.js",
-    "node_modules"
+    "node_modules/**/*.js"
   ]
 }
 
