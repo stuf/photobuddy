@@ -15,42 +15,42 @@
 
 				<StackPanel>
 					<CaptionText>Name</CaptionText>
-					<c.TextBox Value="{name}" />
+					<c.TextBox Value="{values.name}" />
 				</StackPanel>
 
 				<StackPanel>
 					<CaptionText>Location</CaptionText>
-					<c.TextBox Value="{location}" />
+					<c.TextBox Value="{values.location}" />
 				</StackPanel>
 
 				<Grid ColumnCount="3">
 					<StackPanel Margin="0, 0, 5, 0">
 						<CaptionText>Shutter speed</CaptionText>
-						<c.TextBox Value="{shutterSpeed}" InputHint="Decimal" />
+						<c.TextBox Value="{values.shutterSpeed}" InputHint="Decimal" />
 					</StackPanel>
 
 					<StackPanel Margin="5, 0">
 						<CaptionText>Aperture</CaptionText>
-						<c.TextBox Value="{aperture}" InputHint="Decimal" />
+						<c.TextBox Value="{values.aperture}" InputHint="Decimal" />
 					</StackPanel>
 
 					<StackPanel Margin="5, 0, 0, 0">
 						<CaptionText>ISO</CaptionText>
-						<c.TextBox Value="{iso}" InputHint="Integer" />
+						<c.TextBox Value="{values.iso}" InputHint="Integer" />
 					</StackPanel>
 				</Grid>
 
 				<StackPanel>
 					<CaptionText>Position</CaptionText>
 					<DockPanel>
-						<c.TextBox Value="0, 0" />
+						<c.TextBox Value="{values.position}" />
 						<c.ButtonOutlined Text="Locate me" Dock="Right" />
 					</DockPanel>
 				</StackPanel>
 
 				<StackPanel>
 					<CaptionText>Notes</CaptionText>
-					<c.TextView Value="{notes}" TextWrapping="Wrap" />
+					<c.TextView Value="{values.notes}" TextWrapping="Wrap" />
 				</StackPanel>
 			</StackPanel>
 		</ScrollView>
