@@ -46,8 +46,20 @@ function updateEntry(id, entry) {
 }
 
 
+function createEntry(entry) {
+  console.log('Create entry with JSON ' + JSON.stringify(entry, null, 2));
+  entries.add(entry);
+
+  Backend.createEntry(entry)
+    .then(function (a) {
+      console.log('a -> ' + JSON.stringify(entry, null, 2));
+    });
+}
+
+
 module.exports = {
   entries: entries,
 
-  updateEntry: updateEntry
+  updateEntry: updateEntry,
+  createEntry: createEntry
 };

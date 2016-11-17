@@ -4,12 +4,20 @@
 	<JavaScript File="HomePage.js" />
 
 	<DockPanel>
-		<c.Text Color="White" Font="{Resource Font.Secondary}" FontSize="28" Dock="Top" Margin="20, 20">
-			Recent entries
-		</c.Text>
+		<StackPanel Dock="Top">
+			<c.Text Color="White" Font="{Resource Font.Secondary}" FontSize="28" Margin="20, 20">
+				Recent entries
+			</c.Text>
+			<Grid ColumnCount="2" Padding="20, 0, 20, 10">
+				<StackPanel Alignment="Left">
+					<c.Text Opacity=".7" Value="Show IDs" />
+					<Switch ux:Name="showIds" Value="true" />
+				</StackPanel>
+			</Grid>
+		</StackPanel>
 
 		<!-- Create new entry control -->
-		<Panel Dock="Bottom">
+		<Panel>
 			<Panel HitTestMode="LocalBoundsAndChildren" Alignment="BottomRight" Width="48" Height="48" Margin="0,0,18,18" Clicked="{goToCreateNewEntry}">
 				<Circle Layer="Background" Color="{Resource Color.A200}">
 					<i.Add Width="32" />
@@ -29,7 +37,12 @@
 				<Each Items="{entries}">
 					<Separator />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToEntry}">
-						<c.Text Value="{name}" Margin="20" />
+						<StackPanel Padding="20, 17.5">
+							<c.Text Value="{name}" Margin="0, 0, 0, 2.5" />
+							<WhileTrue Value="{Property showIds.Value}">
+								<c.Text Value="{id}" Margin="0, 2.5, 0, 0" Opacity=".7" />
+							</WhileTrue>
+						</StackPanel>
 
 						<i.ChevronRight Alignment="CenterRight" Height="20" Margin="0,0,20,0" Opacity=".7" />
 						<!-- <WhilePressed>

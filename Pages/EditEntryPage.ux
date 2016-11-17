@@ -14,6 +14,7 @@
 				<c.Text ux:Class="CaptionText" Opacity=".6" Margin="0,0,0,5" />
 
 				<c.Text Value="Edit entry" Font="{Resource Font.Secondary}" FontSize="24" />
+				<c.Text Value="{values.id}" />
 
 				<StackPanel>
 					<CaptionText>Name</CaptionText>

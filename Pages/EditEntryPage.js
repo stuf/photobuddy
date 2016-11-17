@@ -7,6 +7,7 @@ var Context = require('Modules/Context');
 var entry = this.Parameter;
 
 var values = {
+  id: entry.map(function (x) { return x.id }),
   name: entry.map(function (x) { return x.name; }),
   location: entry.map(function (x) { return x.location; }),
   shutterSpeed: entry.map(function (x) { return x.shutterSpeed; }),
@@ -16,17 +17,6 @@ var values = {
   notes: entry.map(function (x) { return x.notes; })
 };
 
-function entryValues() {
-  return {
-    name: values.name.value,
-    location: values.location.value,
-    shutterSpeed: values.shutterSpeed.value,
-    aperture: values.aperture.value,
-    iso: values.iso.value,
-    position: values.position.value,
-    notes: values.notes.value
-  };
-}
 
 function save() {
   Context.updateEntry(entry.value.id, {

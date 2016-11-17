@@ -5,7 +5,7 @@ var Utils = require('Modules/Utils');
 
 var isValid = Observable(false);
 
-var entry = Observable();
+var entry = this.Parameter;
 
 var values = {
   name: entry.map(function (x) { return x.name; }),
@@ -19,7 +19,19 @@ var values = {
 
 
 function create(arg) {
-  console.log('Create with data: ' + Utils.spew(arg.data));
+  var data = {
+    id: Utils.guid(),
+    name: values.name.value,
+    location: values.location.value,
+    shutterSpeed: values.shutterSpeed.value,
+    aperture: values.aperture.value,
+    iso: values.iso.value,
+    position: values.position.value,
+    notes: values.notes.value
+  };
+
+  Context.createEntry(data);
+
   router.goto("home", { notice: "Entry created." });
 }
 
@@ -33,5 +45,6 @@ module.exports = {
   values: values,
   isValid: isValid,
 
-  create: create, cancel: cancel
+  create: create,
+  cancel: cancel
 };
