@@ -9,8 +9,8 @@
   "scripts": {
     "postinstall": "nfuse",
     "dev": "npm run dev:start && npm run fuse:start:local",
-    "dev:watch": "babel . --watch --out-dir .",
-    "dev:start": "babel . --out-dir .",
+    "dev:watch": "babel . --watch --out-dir . --only \"./**/*.es6\" --ignore \"./node_modules/**\"",
+    "dev:start": "babel . --out-dir . --only \"./**/*.es6\" --ignore \"./node_modules/**\"",
     "fuse:start:local": "concurrently -k \"npm run dev:watch\" \"fuse preview\""
   },
   "author": "Stefan Rimaila <stefan@rimaila.fi>",

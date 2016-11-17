@@ -2,13 +2,6 @@
   "presets": [
     "latest",
     "es2015-fuse"
-  ],
-  "only": [
-    "Modules/*.es6",
-    "Pages/*.es6"
-  ],
-  "ignore": [
-    "node_modules/**/*.js"
   ]
 }
 
