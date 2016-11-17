@@ -9,6 +9,10 @@ function guid() {
     s4() + '-' + s4() + s4() + s4();
 }
 
+function spew(json) {
+  return JSON.stringify(json, null, 2);
+}
+
 module.exports = {
-  guid
+  guid, spew
 };
