@@ -13,11 +13,19 @@ let values = valueKeys.reduce((obj, k) => {
 	return obj;
 }, {});
 
+const getValues = () => {
+  return Object.keys(values).reduce((obj, v) => {
+    obj[v] = values[v].value;
+    return obj;
+  }, {});
+}
+
 function create(arg) {
-	Context.createEntry(entry);
+  console.log('arg ->' + JSON.stringify(arg.data));
+	//Context.createEntry(values);
 
 	// Add data to `goBack` to display notice of successful save
-	router.goBack();
+	//router.goBack();
 }
 
 function cancel() {

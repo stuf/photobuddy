@@ -28,7 +28,7 @@ function refreshEntries() {
  * @param {Object} entry
  */
 function updateEntry(id, entry) {
-  console.log(`Update entry with ID ${id}`);
+  console.log(`Update entry with ID ${id}; ${JSON.stringify(entry)}`);
   entries.forEach(function (it, idx) {
     var _entry = entries.getAt(idx);
 
@@ -51,14 +51,15 @@ function updateEntry(id, entry) {
  * @param {number} id
  * @param {Object} entry
  */
-function createEntry(id, entry) {
-  Backend.createEntry(id, entry)
+function createEntry(entry) {
+  Backend.createEntry(entry)
+    .then(id => {
+      console.log(`Created new entry with ID ${id}; ${JSON.stringify(entry)}`);
+      entries.add(entry);
+    })
     .catch(function (err) {
       console.log(`Couldn't create entry with ID ${id}`);
     });
-
-  // Most likely not needed, but #YOLO
-  refreshEntries();
 }
 
 module.exports = {

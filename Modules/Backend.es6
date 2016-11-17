@@ -1,8 +1,6 @@
 const entries = require('Modules/Entries');
 const records = require('Modules/Records');
-
-//var EntryRecord = records.EntryRecord;
-const { EntryRecord } = records;
+const utils = require('Modules/Utils');
 
 function getEntries() {
 	return new Promise(function (resolve, reject) {
@@ -25,10 +23,13 @@ function updateEntry(id, entry) {
 	});
 }
 
-function createEntry(id, entry) {
+function createEntry(entry) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      entries.push(entry);
+      console.log('create entry ' + JSON.stringify(entry));
+      const id = utils.guid();
+      entries.push({ ...entry, id });
+      resolve(id);
     }, 0);
   });
 }

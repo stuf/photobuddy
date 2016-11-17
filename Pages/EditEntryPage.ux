@@ -44,7 +44,6 @@
 
 				<StackPanel>
 					<CaptionText>Position</CaptionText>
-					<CaptionText Value="{values.position}" />
 					<DockPanel>
 						<c.TextBox Value="{values.position}" />
 						<c.ButtonOutlined Text="Locate me" Clicked="{locateMe}" Dock="Right" />
