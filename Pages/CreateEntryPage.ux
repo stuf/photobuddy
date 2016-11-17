@@ -1,7 +1,7 @@
-<Page ux:Class="p.EditEntry">
+<Page ux:Class="p.CreateEntry">
 	<Router ux:Dependency="router" />
 
-	<JavaScript File="EditEntryPage.js" />
+	<JavaScript File="CreateEntryPage.js" />
 
 	<DockPanel>
 		<Grid ColumnCount="2" Dock="Bottom">
@@ -11,8 +11,6 @@
 
 		<ScrollView>
 			<StackPanel Padding="10" ItemSpacing="10">
-				<c.Text ux:Class="CaptionText" Opacity=".6" Margin="0,0,0,5" />
-
 				<c.Text Value="Edit entry" Font="{Resource Font.Secondary}" FontSize="24" />
 
 				<StackPanel>

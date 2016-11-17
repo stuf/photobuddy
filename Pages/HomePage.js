@@ -6,6 +6,10 @@ function goToEntry(arg) {
 	router.push('editEntry', entry);
 }
 
+function goToCreateNewEntry() {
+  router.push('createEntry');
+}
+
 module.exports = {
 	entries: Context.entries,
 

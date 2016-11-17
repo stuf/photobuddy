@@ -1,4 +1,4 @@
-<Page ux:Class="SplashPage">
+<Page ux:Class="p.Splash">
 	<Router ux:Dependency="router" />
 
 	<JavaScript File="SplashPage.js" />

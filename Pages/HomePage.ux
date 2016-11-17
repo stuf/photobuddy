@@ -1,4 +1,4 @@
-<Page ux:Class="HomePage">
+<Page ux:Class="p.Home">
 	<Router ux:Dependency="router" />
 
 	<JavaScript File="HomePage.js" />
@@ -7,6 +7,20 @@
 		<c.Text Color="White" Font="{Resource Font.Secondary}" FontSize="28" Dock="Top" Margin="20, 20">
 			Recent entries
 		</c.Text>
+
+
+		<Panel Dock="Bottom">
+			<Panel HitTestMode="LocalBoundsAndChildren" Alignment="BottomRight" Width="48" Height="48" Margin="0,0,18,18">
+				<Circle Layer="Background" Color="{Resource Color.A200}">
+					<i.Add Width="32" />
+					<DropShadow />
+				</Circle>
+
+				<WhilePressed>
+					<Scale Factor=".96" Duration=".07" />
+				</WhilePressed>
+			</Panel>
+		</Panel>
 
 		<ScrollView>
 			<StackPanel>
@@ -17,18 +31,10 @@
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToEntry}">
 						<c.Text Value="{name}" Margin="20" />
 
-						<Panel Width="10" Height="10" Alignment="CenterRight" X="-10">
-							<Rectangle Fill="#fff8" Height="2" Offset="0, -3.5">
-								<Rotation Degrees="45" />
-							</Rectangle>
-							<Rectangle Fill="#fff8" Height="2" Offset="0, 3.5">
-								<Rotation Degrees="-45" />
-							</Rectangle>
-						</Panel>
-
-						<WhilePressed>
+						<i.ChevronRight Alignment="CenterRight" Height="20" Margin="0,0,20,0" Opacity=".7" />
+						<!-- <WhilePressed>
 							<Scale Factor=".95" Duration=".07" Easing="QuadraticOut" />
-						</WhilePressed>
+						</WhilePressed> -->
 					</Panel>
 				</Each>
 
