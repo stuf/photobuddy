@@ -19,7 +19,7 @@ function create(arg) {
 }
 
 function cancel() {
-	router.goBack();
+	router.goto("home");
 }
 
 module.exports = {

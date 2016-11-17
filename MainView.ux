@@ -24,10 +24,11 @@
 	<Router ux:Name="router" />
 
 	<ClientPanel>
-		<Navigator DefaultTemplate="home">
+		<Navigator DefaultTemplate="splash">
 			<p.Splash ux:Template="splash" router="router" />
 			<p.Home ux:Template="home" router="router" />
 			<p.EditEntry ux:Template="editEntry" router="router" />
+			<p.CreateEntry ux:Template="createEntry" router="router" />
 		</Navigator>
 	</ClientPanel>
 </App>

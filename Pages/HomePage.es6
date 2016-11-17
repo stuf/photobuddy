@@ -1,5 +1,5 @@
-var Observable = require('FuseJS/Observable');
-var Context = require('Modules/Context');
+const Observable = require('FuseJS/Observable');
+const Context = require('Modules/Context');
 
 function goToEntry(arg) {
 	var entry = arg.data;
@@ -7,11 +7,11 @@ function goToEntry(arg) {
 }
 
 function goToCreateNewEntry() {
-  router.push('createEntry');
+  router.push('createEntry', {});
 }
 
 module.exports = {
 	entries: Context.entries,
 
-	goToEntry: goToEntry
+	goToEntry, goToCreateNewEntry
 };
