@@ -1,0 +1,8 @@
+<Image ux:Class="i.ChevronRight">
+	<MultiDensityImageSource>
+		<FileImageSource Density="1" File="../../Assets/Images/ic_chevron_right_white_18dp.png" />
+		<FileImageSource Density="2" File="../../Assets/Images/ic_chevron_right_white_24dp.png" />
+		<FileImageSource Density="3" File="../../Assets/Images/ic_chevron_right_white_36dp.png" />
+		<FileImageSource Density="4" File="../../Assets/Images/ic_chevron_right_white_48dp.png" />
+	</MultiDensityImageSource>
+</Image>

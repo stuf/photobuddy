@@ -8,7 +8,7 @@
   },
   "scripts": {
     "postinstall": "nfuse",
-    "dev": "babel-cli"
+    "dev": "babel . --watch --out-dir ."
   },
   "author": "Stefan Rimaila <stefan@rimaila.fi>",
   "license": "MIT",

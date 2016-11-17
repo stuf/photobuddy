@@ -6,12 +6,12 @@
 	<DockPanel>
 		<Grid ColumnCount="2" Dock="Bottom">
 			<c.Button Text="Cancel" Clicked="{cancel}" />
-			<c.Button Text="Save" Clicked="{save}" />
+			<c.Button Text="Create" Clicked="{create}" />
 		</Grid>
 
 		<ScrollView>
 			<StackPanel Padding="10" ItemSpacing="10">
-				<c.Text Value="Edit entry" Font="{Resource Font.Secondary}" FontSize="24" />
+				<c.Text Value="Create new entry" Font="{Resource Font.Secondary}" FontSize="24" />
 
 				<StackPanel>
 					<CaptionText>Name</CaptionText>

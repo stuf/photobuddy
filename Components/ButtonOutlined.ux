@@ -1,10 +1,15 @@
-<Panel ux:Class="c.ButtonOutlined" FontSize="16" Padding="15, 0">
+<Panel ux:Class="c.ButtonOutlined" FontSize="16" Padding="15, 0" HitTestMode="LocalBoundsAndChildren">
 	<string ux:Property="Text" />
 	<float ux:Property="FontSize" />
 
 	<c.Text Value="{Property Text}" FontSize="{Property FontSize}" Alignment="Center" />
 
-	<Rectangle Layer="Background" CornerRadius="0, 4, 4, 0">
+	<Rectangle ux:Name="body" Layer="Background" CornerRadius="4">
 		<Stroke Color="{Resource Color.A200}" Width="2" />
+		<DropShadow ux:Name="shadow" Angle="90" Distance="0" Spread=".1" Color="#0000" Size="1" />
 	</Rectangle>
+
+	<WhilePressed>
+		<Scale Factor=".95" Duration=".07" Easing="QuadraticIn" />
+	</WhilePressed>
 </Panel>

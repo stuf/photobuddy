@@ -1,4 +1,11 @@
 {
-  "presets": ["latest"]
+  "presets": [
+    "latest",
+    "es2015-fuse"
+  ],
+  "ignore": [
+  	"**/*.js",
+    "node_modules"
+  ]
 }
 

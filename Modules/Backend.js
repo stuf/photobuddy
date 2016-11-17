@@ -1,6 +1,8 @@
 var entries = require('Modules/Entries');
 var records = require('Modules/Records');
 
+var EntryRecord = records.EntryRecord;
+
 function getEntries() {
 	return new Promise(function (resolve, reject) {
 		setTimeout(function () {
@@ -23,7 +25,16 @@ function updateEntry(id, entry) {
 	});
 }
 
+function createEntry(id, entry) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      entries.push(new EntryRecord(entry));
+    }, 0);
+  });
+}
+
 module.exports = {
 	getEntries: getEntries,
-	updateEntry: updateEntry
+	updateEntry: updateEntry,
+  createEntry: createEntry
 };

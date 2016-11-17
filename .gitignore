@@ -2,9 +2,13 @@ build/
 .uno/
 .DS_Store
 
+# Node.js
 node_modules
 NPM-Packages
+npm-debug.log
 
 # Project-specific
 Resources/Fonts
 Assets/Fonts
+Pages/*.js
+
