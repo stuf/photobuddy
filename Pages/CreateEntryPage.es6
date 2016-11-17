@@ -1,6 +1,8 @@
-import Observable from 'FuseJS/Observable';
-import GeoLocation from 'FuseJS/GeoLocation';
-import Context from 'Modules/Context';
+const Observable = require('FuseJS/Observable');
+const GeoLocation = require('FuseJS/GeoLocation');
+const Context = require('Modules/Context');
+
+let isValid = Observable(false);
 
 let entry = Observable();
 
@@ -24,6 +26,7 @@ function cancel() {
 
 module.exports = {
 	values,
+	isValid,
 
 	create, cancel
 };

@@ -1,6 +1,7 @@
-<Panel ux:Class="c.Button" Margin="8" Padding="14" FontSize="16">
+<Panel ux:Class="c.Button" Margin="8" Padding="14" FontSize="16" Disabled="false">
 	<string ux:Property="Text" />
 	<float ux:Property="FontSize" />
+	<bool ux:Property="Disabled" />
 
 	<Rectangle Layer="Background" Color="{Resource Color.A200}" CornerRadius="4">
 		<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000006" />

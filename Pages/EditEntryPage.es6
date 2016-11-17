@@ -1,41 +1,43 @@
-var Observable = require('FuseJS/Observable');
-var GeoLocation = require('FuseJS/GeoLocation');
-var Context = require('Modules/Context');
+const Observable = require('FuseJS/Observable');
+const GeoLocation = require('FuseJS/GeoLocation');
+const Context = require('Modules/Context');
 
-var entry = this.Parameter;
+let entry = this.Parameter;
 
-var name = entry.map(function (x) { return x.name; });
-var location = entry.map(function (x) { return x.location; });
-var shutterSpeed = entry.map(function (x) { return x.shutterSpeed; });
-var aperture = entry.map(function (x) { return x.aperture; });
-var iso = entry.map(function (x) { return x.iso; });
-var notes = entry.map(function (x) { return x.notes; });
+let valueKeys = ['name', 'location', 'shutterSpeed', 'aperture', 'iso', 'position', 'notes'];
+
+let values = valueKeys.reduce((obj, k) => {
+    obj[k] = entry.map(x => x[k]);
+    return obj;
+}, {});
 
 function save() {
-	Context.updateEntry(entry.value.id, {
-		name: name.value,
-		location: location.value,
-		shutterSpeed: shutterSpeed.value,
-		aperture: aperture.value,
-		iso: iso.value,
-		notes: notes.value
-	});
-	router.goBack();
+  Context.updateEntry(entry.value.id, { ...values });
+  router.goBack();
 }
 
 function cancel() {
-	entry.value = entry.value;
-	router.goBack();
+  entry.value = entry.value;
+  router.goBack();
+}
+
+function locateMe() {
+  let locateTimeout = 2000;
+  GeoLocation.getLocation(locateTimeout)
+    .then(location => {
+      const { latitude, longitude, accuracy, altitude } = location;
+      const position = [latitude, longitude];
+
+      console.log(`Successfully got location: ${latitude}, ${longitude} with accuracy ${accuracy}`);
+
+      Context.updateEntry(entry.value.id, { ...values, position });
+      values.position.value = position;
+    })
+    .catch(err => console.log(`Error in getting location: ${err}`));
 }
 
 module.exports = {
-	name: name,
-	location: location,
-	shutterSpeed: shutterSpeed,
-	aperture: aperture,
-	iso: iso,
-	notes: notes,
+    values,
 
-	save: save,
-	cancel: cancel
+    save, cancel, locateMe
 };

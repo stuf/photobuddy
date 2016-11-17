@@ -10,8 +10,8 @@
 
 		<!-- Create new entry control -->
 		<Panel Dock="Bottom">
-			<Panel HitTestMode="LocalBoundsAndChildren" Alignment="BottomRight" Width="48" Height="48" Margin="0,0,18,18">
-				<Circle Layer="Background" Color="{Resource Color.A200}" Clicked="{goToCreateNewEntry}">
+			<Panel HitTestMode="LocalBoundsAndChildren" Alignment="BottomRight" Width="48" Height="48" Margin="0,0,18,18" Clicked="{goToCreateNewEntry}">
+				<Circle Layer="Background" Color="{Resource Color.A200}">
 					<i.Add Width="32" />
 					<DropShadow />
 				</Circle>

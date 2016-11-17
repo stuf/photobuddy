@@ -18,13 +18,10 @@
 	<!-- Accent colors -->
 	<float4 ux:Key="Color.A200" ux:Value="#FF4081" />
 
-	<!-- First page -->
-	<string ux:Key="DefaultPage" ux:Value="home" />
-
 	<Router ux:Name="router" />
 
 	<ClientPanel>
-		<Navigator DefaultTemplate="splash">
+		<Navigator DefaultPath="splash">
 			<p.Splash ux:Template="splash" router="router" />
 			<p.Home ux:Template="home" router="router" />
 			<p.EditEntry ux:Template="editEntry" router="router" />

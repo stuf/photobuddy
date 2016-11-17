@@ -2,7 +2,7 @@ const Observable = require('FuseJS/Observable');
 const Context = require('Modules/Context');
 
 function goToEntry(arg) {
-	var entry = arg.data;
+	let entry = arg.data;
 	router.push('editEntry', entry);
 }
 
