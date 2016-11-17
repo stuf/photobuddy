@@ -10,6 +10,3 @@ npm-debug.log
 # Project-specific
 Resources/Fonts
 Assets/Fonts
-Pages/*.js
-Modules/*.js
-

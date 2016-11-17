@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"goTo",
+				"goToCreateNewEntry"
+			],
+			[
 				"LocalB",
 				"LocalBoundsAndChildren\t"
 			],
@@ -191,40 +195,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Pages/SplashPage.js",
-			"settings":
-			{
-				"buffer_size": 115,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Pages/CreateEntryPage.es6",
-			"settings":
-			{
-				"buffer_size": 579,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Pages/HomePage.ux",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Pages/HomePage.es6",
-			"settings":
-			{
-				"buffer_size": 313,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -233,17 +203,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 252.0,
-		"last_filter": "install",
+		"height": 354.0,
+		"last_filter": "convert ",
 		"selected_items":
 		[
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"convert ",
 				"Indentation: Convert to Spaces"
+			],
+			[
+				"syntax json",
+				"Set Syntax: JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"syntax ux",
@@ -303,48 +277,48 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/stuf/Code/Home/photobuddy",
-		"/Users/stuf/Code/Home/photobuddy/Components",
-		"/Users/stuf/Code/Home/photobuddy/Components/Icons",
-		"/Users/stuf/Code/Home/photobuddy/Modules",
-		"/Users/stuf/Code/Home/photobuddy/node_modules/immutable",
-		"/Users/stuf/Code/Home/photobuddy/node_modules/immutable/dist",
-		"/Users/stuf/Code/Home/photobuddy/Pages"
+		"/Users/stuf/Code/Home/photobuddy"
 	],
 	"file_history":
 	[
-		"/Users/stuf/Code/Home/photobuddy/Modules/Backend.es6",
-		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntry.ux",
-		"/Users/stuf/Code/Home/photobuddy/MainView.ux",
 		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntryPage.ux",
+		"/Users/stuf/Code/Home/photobuddy/Modules/Context.es6",
 		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntryPage.es6",
 		"/Users/stuf/Code/Home/photobuddy/Pages/EditEntryPage.es6",
+		"/Users/stuf/Code/Home/photobuddy/Modules/Backend.es6",
 		"/Users/stuf/Code/Home/photobuddy/Pages/EditEntryPage.ux",
-		"/Users/stuf/Code/Home/photobuddy/Modules/Context.js",
+		"/Users/stuf/Code/Home/photobuddy/Pages/HomePage.es6",
+		"/Users/stuf/Code/Home/photobuddy/Pages/HomePage.ux",
+		"/Users/stuf/Code/Home/photobuddy/Pages/SplashPage.js",
+		"/Users/stuf/Code/Home/photobuddy/Modules/Utils.es6",
+		"/Users/stuf/Code/Home/photobuddy/package.json",
+		"/Users/stuf/Code/Home/photobuddy/Modules/Entries.es6",
 		"/Users/stuf/Code/Home/photobuddy/Modules/Backend.js",
-		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntryPage.js",
+		"/Users/stuf/Code/Home/photobuddy/MainView.ux",
+		"/Users/stuf/Code/Home/photobuddy/.editorconfig",
 		"/Users/stuf/Code/Home/photobuddy/Pages/EditEntryPage.js",
-		"/Users/stuf/Code/Home/photobuddy/test/Pages/CreateEntryPage.js",
 		"/Users/stuf/Code/Home/photobuddy/.babelrc",
+		"/Users/stuf/Code/Home/photobuddy/Components/Button.ux",
+		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntryPage.js",
+		"/Users/stuf/Code/Home/photobuddy/Modules/babeltest.es6",
+		"/Users/stuf/Code/Home/photobuddy/Pages/HomePage.js",
+		"/Users/stuf/Code/Home/photobuddy/Modules/babeltest.js",
+		"/Users/stuf/Code/Home/photobuddy/Pages/CreateEntry.ux",
+		"/Users/stuf/Code/Home/photobuddy/Modules/Context.js",
+		"/Users/stuf/Code/Home/photobuddy/test/Pages/CreateEntryPage.js",
 		"/Users/stuf/Code/Home/photobuddy/Components/Icons/ChevronLeft.ux",
 		"/Users/stuf/Code/Home/photobuddy/Components/Icons/Add.ux",
 		"/Users/stuf/Code/Home/photobuddy/Components/Icons/ChevronRight.ux",
-		"/Users/stuf/Code/Home/photobuddy/Components/Button.ux",
-		"/Users/stuf/Code/Home/photobuddy/Pages/HomePage.js",
-		"/Users/stuf/Code/Home/photobuddy/Pages/HomePage.ux",
 		"/Users/stuf/Code/Home/photobuddy/photobuddy.unoproj",
 		"/Users/stuf/Code/Home/photobuddy/Pages/SplashPage.ux",
 		"/Users/stuf/Code/Home/photobuddy/Components/ButtonOutlined.ux",
 		"/Users/stuf/Code/Home/photobuddy/Modules/Records.js",
 		"/Users/stuf/Code/Home/photobuddy/Modules/Entries.js",
-		"/Users/stuf/Code/Home/photobuddy/.editorconfig",
 		"/Users/stuf/Code/Home/photobuddy/.gitignore",
-		"/Users/stuf/Code/Home/photobuddy/package.json",
 		"/Users/stuf/Code/Home/photobuddy/Components/TextBox.ux",
 		"/Users/stuf/Code/Home/photobuddy/Components/TextView.ux",
 		"/Users/stuf/Code/Home/photobuddy/Components/Text.ux",
 		"/Users/stuf/Code/Home/photobuddy/README.md",
-		"/Users/stuf/Code/Home/photobuddy/Pages/SplashPage.js",
 		"/Users/stuf/Code/Home/photobuddy/entries.js",
 		"/Users/stuf/Dropbox/TextBox.ux",
 		"/Users/stuf/Code/Home/photobuddy/Modules/backend.js",
@@ -434,13 +408,7 @@
 		"/Users/stuf/Code/Home/fuse/shooters-log/shooters-log.unoproj",
 		"/Users/stuf/Code/Home/fuse/shooters-log/MainViewContent.ux",
 		"/Users/stuf/Code/Home/fuse/shooters-log/MainView.ux",
-		"/Users/stuf/Code/Home/fuse/shooters-log/README.md",
-		"/Users/stuf/Code/Home/fuse/shooters-log/ListItem.ux",
-		"/Users/stuf/Code/Home/fuse/shooters-log/Assets/colors.js",
-		"/Users/stuf/Code/Home/fuse/shooters-log/ShotDetail.ux",
-		"/Users/stuf/Code/Home/fuse/desucon-schedule/ProgramItemView.ux",
-		"/Users/stuf/Code/Home/fuse/desucon-schedule/.gitignore",
-		"/Users/stuf/Code/Home/fuse/desucon-schedule/ProgramItem.ux"
+		"/Users/stuf/Code/Home/fuse/shooters-log/README.md"
 	],
 	"find":
 	{
@@ -496,127 +464,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Pages/SplashPage.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								62
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Pages/CreateEntryPage.es6",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 579,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								401,
-								401
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Pages/HomePage.ux",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"syntax": "Packages/Fuse/UX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Pages/HomePage.es6",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 313,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								313,
-								313
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -677,12 +526,88 @@
 		"selected_items":
 		[
 			[
-				"homepage",
-				"Pages/HomePage.es6"
+				"backen",
+				"Modules/Backend.es6"
+			],
+			[
+				"context.",
+				"Modules/Context.es6"
 			],
 			[
 				"createentr",
+				"Pages/CreateEntryPage.ux"
+			],
+			[
+				"backend",
+				"Modules/Backend.es6"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"editen",
+				"Pages/EditEntryPage.ux"
+			],
+			[
+				"entries.es",
+				"Modules/Entries.es6"
+			],
+			[
+				"context",
+				"Modules/Context.es6"
+			],
+			[
+				"mainview",
+				"MainView.ux"
+			],
+			[
+				"editentry",
+				"Pages/EditEntryPage.ux"
+			],
+			[
+				"babelrc",
+				".babelrc"
+			],
+			[
+				"edit",
+				"Pages/EditEntryPage.es6"
+			],
+			[
+				"createen",
 				"Pages/CreateEntryPage.es6"
+			],
+			[
+				"entry",
+				"Pages/EditEntryPage.js"
+			],
+			[
+				"homepage.js",
+				"Pages/HomePage.js"
+			],
+			[
+				"babel",
+				".babelrc"
+			],
+			[
+				"homepage",
+				"Pages/HomePage.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"babe",
+				".babelrc"
+			],
+			[
+				"babelr",
+				".babelrc"
+			],
+			[
+				"button",
+				"Components/Button.ux"
 			],
 			[
 				"backend.",
@@ -693,24 +618,12 @@
 				"Modules/Context.js"
 			],
 			[
-				"editentry",
-				"Pages/EditEntryPage.ux"
-			],
-			[
 				"backe",
 				"Modules/Backend.js"
 			],
 			[
-				"context",
-				"Modules/Context.js"
-			],
-			[
 				"testentry",
 				"test/Pages/CreateEntryPage.js"
-			],
-			[
-				"babelrc",
-				".babelrc"
 			],
 			[
 				"context.j",
@@ -745,18 +658,6 @@
 				"MainView.ux"
 			],
 			[
-				"homepage.js",
-				"Pages/HomePage.js"
-			],
-			[
-				"button",
-				"Components/Button.ux"
-			],
-			[
-				"mainview",
-				"MainView.ux"
-			],
-			[
 				"unoproj",
 				"photobuddy.unoproj"
 			],
@@ -781,10 +682,6 @@
 				"MainView.ux"
 			],
 			[
-				"editen",
-				"Pages/EditEntryPage.ux"
-			],
-			[
 				"package.json",
 				"package.json"
 			],
@@ -799,14 +696,6 @@
 			[
 				"detil",
 				"Pages/DetailsPage.js"
-			],
-			[
-				"backen",
-				"backend.js"
-			],
-			[
-				"backend",
-				"backend.js"
 			],
 			[
 				"packag",
