@@ -2,13 +2,17 @@
 	<iOS.StatusBarConfig Style="Light" />
 	<Android.StatusBarConfig Color="#263238" />
 
-	<!-- Fonts used -->
+	<!-- Typography -->
+	<!-- Fonts -->
 	<Font ux:Key="Font.Monospace" File="Assets/Fonts/SpaceMono-Regular.ttf" />
 	<Font ux:Key="Font.SansSerif" File="Assets/Fonts/Karla-Regular.ttf" />
 	<Font ux:Key="Font.Serif" File="Assets/Fonts/Lora-Regular.ttf" />
 
 	<Font ux:Key="Font.Base" File="Assets/Fonts/Karla-Regular.ttf" />
 	<Font ux:Key="Font.Secondary" File="Assets/Fonts/SpaceMono-Regular.ttf" />
+
+	<!-- Common text sizes -->
+	<float ux:Key="FontSize.Heading" ux:Value="24" />
 
 	<!-- Primary colors -->
 	<float4 ux:Key="Color.P100" ux:Value="#C5CAE9" />
@@ -24,6 +28,9 @@
 		<Navigator DefaultPath="splash">
 			<p.Splash ux:Template="splash" router="router" />
 			<p.Home ux:Template="home" router="router" />
+
+			<!-- TODO Migrate these into their own child router -->
+			<p.ViewEntry ux:Template="viewEntry" router="router" />
 			<p.EditEntry ux:Template="editEntry" router="router" />
 			<p.CreateEntry ux:Template="createEntry" router="router" />
 		</Navigator>

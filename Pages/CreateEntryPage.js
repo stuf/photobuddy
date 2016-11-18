@@ -3,8 +3,6 @@ var GeoLocation = require('FuseJS/GeoLocation');
 var Context = require('Modules/Context');
 var Utils = require('Modules/Utils');
 
-var isValid = Observable(false);
-
 var entry = this.Parameter;
 
 var values = {

@@ -11,6 +11,9 @@ var EntryRecord = I.Record({
 	position: undefined
 });
 
+var StateRecord = I.Record({});
+
 module.exports = {
-	EntryRecord: EntryRecord
+	EntryRecord: EntryRecord,
+  StateRecord: StateRecord
 };

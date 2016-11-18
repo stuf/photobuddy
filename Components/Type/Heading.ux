@@ -1,0 +1,1 @@
+<c.Text ux:Class="c.Heading" FontSize="{Resource FontSize.Heading}" Font="{Resource Font.Secondary}" />

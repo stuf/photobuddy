@@ -1,0 +1,72 @@
+<Page ux:Class="p.ViewEntry">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="ViewEntryPage.js" />
+
+	<Panel>
+		<Panel Alignment="BottomLeft" HitTestMode="LocalBoundsAndChildren" Margin="18,0,0,18" Width="48" Height="48" Clicked="{goBack}">
+			<Circle Layer="Background" Color="{Resource Color.A200}">
+				<i.ChevronLeft Width="32" />
+				<DropShadow />
+			</Circle>
+		</Panel>
+	</Panel>
+
+	<DockPanel>
+		<ScrollView>
+			<StackPanel Padding="10" ItemSpacing="10">
+				<c.Heading Value="View Entry" />
+
+				<c.Text ux:Class="ValueText" FontSize="20" />
+
+				<StackPanel>
+					<CaptionText Value="Name" />
+					<ValueText Value="{values.name}" />
+				</StackPanel>
+
+				<StackPanel>
+					<CaptionText Value="Date" />
+					<ValueText Value="{values.date}" />
+				</StackPanel>
+
+				<StackPanel>
+					<CaptionText Value="Location" />
+					<ValueText Value="{values.location}" />
+				</StackPanel>
+
+				<Grid ColumnCount="3">
+					<StackPanel>
+						<CaptionText Value="Exposure" />
+						<ValueText Value="{values.shutterSpeed}" />
+					</StackPanel>
+
+					<StackPanel>
+						<CaptionText Value="Aperture" />
+						<ValueText Value="{values.aperture}" />
+					</StackPanel>
+
+					<StackPanel>
+						<CaptionText Value="ISO" />
+						<ValueText Value="{values.iso}" />
+					</StackPanel>
+				</Grid>
+
+				<WhileTrue Value="{features.hasPosition}">
+					<StackPanel>
+						<CaptionText Value="Position" />
+						<NativeViewHost>
+							<MapView Height="160" Latitude="{values.position.latitude}" Longitude="{values.position.longitude}" Zoom="8">
+								<MapMarker Latitude="{values.position.latitude}" Longitude="{values.position.longitude}" Label="{values.name}" />
+							</MapView>
+						</NativeViewHost>
+					</StackPanel>
+				</WhileTrue>
+
+				<StackPanel>
+					<CaptionText Value="Notes" />
+					<ValueText Value="{values.notes}" TextWrapping="Wrap" />
+				</StackPanel>
+			</StackPanel>
+		</ScrollView>
+	</DockPanel>
+</Page>

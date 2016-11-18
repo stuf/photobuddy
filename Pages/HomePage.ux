@@ -4,17 +4,15 @@
 	<JavaScript File="HomePage.js" />
 
 	<DockPanel>
-		<StackPanel Dock="Top">
+		<Panel Dock="Top">
+			<StackPanel Alignment="CenterRight" ItemSpacing="10" Margin="0,0,10,0">
+				<c.MutedText Value="Show IDs" />
+				<Switch ux:Name="showIds" Value="false" />
+			</StackPanel>
 			<c.Text Color="White" Font="{Resource Font.Secondary}" FontSize="28" Margin="20, 20">
 				Recent entries
 			</c.Text>
-			<Grid ColumnCount="2" Padding="20, 0, 20, 10">
-				<StackPanel Alignment="Left">
-					<c.Text Opacity=".7" Value="Show IDs" />
-					<Switch ux:Name="showIds" Value="true" />
-				</StackPanel>
-			</Grid>
-		</StackPanel>
+		</Panel>
 
 		<!-- Create new entry control -->
 		<Panel>
@@ -36,7 +34,7 @@
 
 				<Each Items="{entries}">
 					<Separator />
-					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToEntry}">
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{viewEntry}">
 						<StackPanel Padding="20, 17.5">
 							<c.Text Value="{name}" Margin="0, 0, 0, 2.5" />
 							<WhileTrue Value="{Property showIds.Value}">

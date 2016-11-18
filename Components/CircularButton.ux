@@ -1,0 +1,5 @@
+<Panel ux:Class="c.CircularButton">
+	<Circle Layer="Background" Color="{Resource Color.A200}">
+		<DropShadow />
+	</Circle>
+</Panel>

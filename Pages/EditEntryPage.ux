@@ -13,7 +13,7 @@
 			<StackPanel Padding="10" ItemSpacing="10">
 				<c.Text ux:Class="CaptionText" Opacity=".6" Margin="0,0,0,5" />
 
-				<c.Text Value="Edit entry" Font="{Resource Font.Secondary}" FontSize="24" />
+				<c.Heading Value="Edit entry" Font="{Resource Font.Secondary}" />
 				<c.Text Value="{values.id}" />
 
 				<StackPanel>
