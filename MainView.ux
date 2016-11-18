@@ -35,4 +35,12 @@
 			<p.CreateEntry ux:Template="createEntry" router="router" />
 		</Navigator>
 	</ClientPanel>
+
+	<!-- Give a nice background gradient to the app -->
+	<Panel Layer="Background">
+		<LinearGradient>
+			<GradientStop Offset="0" Color="#0000" />
+			<GradientStop Offset="1" Color="#0004" />
+		</LinearGradient>
+	</Panel>
 </App>
